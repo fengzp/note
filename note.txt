@@ -1,0 +1,13 @@
+maven指定项目jar包
+<dependency>
+    <groupId>com.sun</groupId>
+    <artifactId>javadoc</artifactId>
+    <version>1.8</version>
+    <scope>system</scope>
+    <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/tools.jar</systemPath>
+</dependency>
+
+
+
+spring指定配置为环境变量优先
+<context:property-placeholder location="classpath:config.properties" local-override="false" system-properties-mode="ENVIRONMENT"/>
